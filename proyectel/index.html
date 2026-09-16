@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es-BO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proyectel — Conectividad e infraestructura corporativa</title>
+<meta name="description" content="Enlaces de datos, VPN corporativa, data center y housing/colocation para empresas. Infraestructura propia y soporte 24/7.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+<a class="salto-contenido" href="#contenido">Saltar al contenido</a>
+
+<!-- ============ CABECERA ============ -->
+<header class="cabecera">
+  <div class="contenedor cabecera__fila">
+
+    <!-- LOGO: cuando tengas el archivo oficial, reemplazá todo este <a> por:
+         <a class="logo" href="index.html"><img src="assets/img/logo-proyectel.svg" alt="Proyectel" height="34"></a> -->
+    <a class="logo" href="index.html">
+      <svg class="logo__marca" viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="1" y="1" width="30" height="30" rx="4" fill="#10263A"/>
+        <circle cx="16" cy="16" r="3.2" fill="#C08A2E"/>
+        <circle cx="8" cy="9" r="2" fill="#FFFFFF"/>
+        <circle cx="24" cy="9" r="2" fill="#FFFFFF"/>
+        <circle cx="8" cy="23" r="2" fill="#FFFFFF"/>
+        <circle cx="24" cy="23" r="2" fill="#FFFFFF"/>
+        <g stroke="#7E98AC" stroke-width="1.1">
+          <path d="M9.6 10.4 13.6 13.6M22.4 10.4 18.4 13.6M9.6 21.6 13.6 18.4M22.4 21.6 18.4 18.4"/>
+        </g>
+      </svg>
+      <span class="logo__texto">PROYEC<span>TEL</span></span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navPrincipal" aria-label="Abrir menú">
+      <span></span>
+    </button>
+
+    <nav class="nav" id="navPrincipal" aria-label="Navegación principal">
+      <ul class="nav__lista">
+        <li><a class="nav__enlace" href="index.html" aria-current="page">Inicio</a></li>
+        <li><a class="nav__enlace" href="productos.html">Productos y soluciones</a></li>
+        <li><a class="nav__enlace" href="nosotros.html">Nosotros</a></li>
+        <li><a class="nav__enlace" href="contacto.html">Contacto</a></li>
+      </ul>
+      <a class="boton boton--primario" href="contacto.html#cotizacion">Solicitar cotización</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- ============ PORTADA ============ -->
+  <section class="portada">
+    <div class="contenedor portada__interior">
+      <h1 class="portada__titulo" style="max-width:19ch">Conectividad crítica para empresas que no pueden detenerse.</h1>
+      <p class="portada__bajada">
+        Diseñamos, implementamos y operamos enlaces de datos, redes privadas y servicios de
+        data center con infraestructura propia y monitoreo permanente.
+      </p>
+      <div class="portada__acciones">
+        <a class="boton boton--claro" href="contacto.html#cotizacion">Solicitar cotización</a>
+        <a class="boton boton--contorno-claro" href="productos.html">Ver soluciones</a>
+      </div>
+
+      <!-- DIAGRAMA DE RED
+           Los valores (1 Gbps, 1:1, &lt; 10 ms, Tier III) son de ejemplo:
+           cambialos por los datos reales de Proyectel antes de presentar. -->
+      <div class="diagrama">
+
+        <!-- Versión horizontal (escritorio) -->
+        <svg class="diagrama__horizontal" viewBox="0 0 1120 250" role="img"
+             aria-label="Diagrama: las sedes del cliente se conectan por enlace dedicado de fibra óptica a la red Proyectel, y de ahí al data center.">
+
+          <!-- Enlace 1 -->
+          <path class="nodo-linea" d="M230 125 H445"/>
+          <path class="nodo-pulso" d="M230 125 H445"/>
+          <text class="dia-pie" x="337" y="106" text-anchor="middle">Fibra óptica dedicada</text>
+          <text class="dia-dato" x="337" y="152" text-anchor="middle">1 Gbps</text>
+
+          <!-- Enlace 2 -->
+          <path class="nodo-linea" d="M675 125 H890"/>
+          <path class="nodo-pulso nodo-pulso--b" d="M675 125 H890"/>
+          <text class="dia-pie" x="782" y="106" text-anchor="middle">Túnel VPN cifrado</text>
+          <text class="dia-dato" x="782" y="152" text-anchor="middle">&lt; 10 ms</text>
+
+          <!-- Nodo 1: sedes -->
+          <rect class="dia-caja" x="0" y="50" width="230" height="150" rx="3"/>
+          <g class="dia-glifo" transform="translate(24,74)">
+            <path d="M0 22V4l9-4 9 4v18"/><path d="M4 22v-6h10v6"/><path d="M5 8h3M12 8h3"/>
+          </g>
+          <text class="dia-titulo" x="24" y="132">Sus sedes</text>
+          <text class="dia-pie" x="24" y="156">Casa matriz, sucursales</text>
+          <text class="dia-pie" x="24" y="176">y accesos remotos</text>
+
+          <!-- Nodo 2: red Proyectel -->
+          <rect class="dia-caja dia-caja--acento" x="445" y="50" width="230" height="150" rx="3"/>
+          <g class="dia-glifo" transform="translate(469,74)">
+            <circle cx="10" cy="11" r="4"/><circle cx="1.5" cy="2" r="1.5"/><circle cx="18.5" cy="2" r="1.5"/>
+            <circle cx="1.5" cy="20" r="1.5"/><circle cx="18.5" cy="20" r="1.5"/>
+            <path d="M3 3.5 7 8M17 3.5 13 8M3 18.5 7 14M17 18.5 13 14"/>
+          </g>
+          <text class="dia-titulo" x="469" y="132">Red Proyectel</text>
+          <text class="dia-dato" x="469" y="160">1:1</text>
+          <text class="dia-pie" x="469" y="182">Ancho de banda simétrico</text>
+
+          <!-- Nodo 3: data center -->
+          <rect class="dia-caja" x="890" y="50" width="230" height="150" rx="3"/>
+          <g class="dia-glifo" transform="translate(914,74)">
+            <rect x="0" y="0" width="20" height="22" rx="2"/>
+            <path d="M0 7h20M0 14h20"/><circle cx="16" cy="3.5" r="1"/><circle cx="16" cy="10.5" r="1"/>
+          </g>
+          <text class="dia-titulo" x="914" y="132">Data center</text>
+          <text class="dia-dato" x="914" y="160">Tier III</text>
+          <text class="dia-pie" x="914" y="182">Energía y clima redundantes</text>
+        </svg>
+
+        <!-- Versión vertical (móvil) -->
+        <svg class="diagrama__vertical" viewBox="0 0 320 470" role="img"
+             aria-label="Diagrama: las sedes del cliente se conectan por fibra óptica a la red Proyectel y al data center.">
+          <path class="nodo-linea" d="M160 110 V170"/>
+          <path class="nodo-pulso" d="M160 110 V170" style="stroke-dasharray:14 70"/>
+          <text class="dia-pie" x="176" y="145">Fibra óptica, 1 Gbps</text>
+
+          <path class="nodo-linea" d="M160 290 V350"/>
+          <path class="nodo-pulso nodo-pulso--b" d="M160 290 V350" style="stroke-dasharray:14 70"/>
+          <text class="dia-pie" x="176" y="325">VPN cifrada, &lt; 10 ms</text>
+
+          <rect class="dia-caja" x="10" y="10" width="300" height="100" rx="3"/>
+          <text class="dia-titulo" x="32" y="52">Sus sedes</text>
+          <text class="dia-pie" x="32" y="76">Casa matriz, sucursales y accesos remotos</text>
+
+          <rect class="dia-caja dia-caja--acento" x="10" y="170" width="300" height="120" rx="3"/>
+          <text class="dia-titulo" x="32" y="212">Red Proyectel</text>
+          <text class="dia-dato" x="32" y="240">1:1</text>
+          <text class="dia-pie" x="32" y="262">Ancho de banda simétrico</text>
+
+          <rect class="dia-caja" x="10" y="350" width="300" height="110" rx="3"/>
+          <text class="dia-titulo" x="32" y="392">Data center</text>
+          <text class="dia-dato" x="32" y="420">Tier III</text>
+          <text class="dia-pie" x="32" y="442">Energía y clima redundantes</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESUMEN DE PRODUCTOS ============ -->
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="encabezado-seccion">
+        <p class="rotulo">Servicios</p>
+        <h2>Cuatro servicios que sostienen la operación diaria de su empresa</h2>
+        <p>Cada solución se dimensiona según sus sedes, su tráfico y su nivel de servicio requerido.</p>
+      </div>
+
+      <div class="lista-servicios">
+
+        <article class="servicio">
+          <svg class="servicio__glifo" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M20 4 6 10v10c0 8 6 14 14 16 8-2 14-8 14-16V10L20 4Z"/>
+            <path d="M14 20h12M20 14v12"/>
+          </svg>
+          <div>
+            <h3>VPN corporativa</h3>
+            <p>Red privada que une sus sucursales y usuarios remotos sobre un canal cifrado, con políticas de acceso por área y control centralizado.</p>
+            <ul class="servicio__datos">
+              <li>AES-256</li><li>IPsec / SSL</li><li>Multi-sede</li>
+            </ul>
+          </div>
+          <div class="servicio__accion">
+            <a class="enlace-texto" href="productos.html#vpn-corporativa">Ver detalle</a>
+          </div>
+        </article>
+
+        <article class="servicio">
+          <svg class="servicio__glifo" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <rect x="7" y="5" width="26" height="30" rx="2"/>
+            <path d="M7 15h26M7 25h26"/><circle cx="27" cy="10" r="1.4" fill="currentColor"/>
+            <circle cx="27" cy="20" r="1.4" fill="currentColor"/><circle cx="27" cy="30" r="1.4" fill="currentColor"/>
+          </svg>
+          <div>
+            <h3>Data center</h3>
+            <p>Alojamiento de sus servicios en instalaciones con energía, refrigeración y conectividad redundantes, bajo control de acceso permanente.</p>
+            <ul class="servicio__datos">
+              <li>UPS + generador</li><li>Clima N+1</li><li>Acceso controlado</li>
+            </ul>
+          </div>
+          <div class="servicio__accion">
+            <a class="enlace-texto" href="productos.html#data-center">Ver detalle</a>
+          </div>
+        </article>
+
+        <article class="servicio">
+          <svg class="servicio__glifo" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <circle cx="9" cy="20" r="4"/><circle cx="31" cy="20" r="4"/>
+            <path d="M13 20h14"/><path d="M20 12v-4M20 28v4"/>
+          </svg>
+          <div>
+            <h3>Enlace de datos</h3>
+            <p>Conexión dedicada punto a punto o punto a multipunto entre sus oficinas, con ancho de banda garantizado y sin compartir el canal.</p>
+            <ul class="servicio__datos">
+              <li>Simétrico 1:1</li><li>Fibra y radioenlace</li><li>SLA por contrato</li>
+            </ul>
+          </div>
+          <div class="servicio__accion">
+            <a class="enlace-texto" href="productos.html#enlace-de-datos">Ver detalle</a>
+          </div>
+        </article>
+
+        <article class="servicio">
+          <svg class="servicio__glifo" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <rect x="6" y="8" width="28" height="8" rx="1.5"/><rect x="6" y="18" width="28" height="8" rx="1.5"/>
+            <rect x="6" y="28" width="28" height="4" rx="1.5"/>
+            <path d="M11 12h2M11 22h2"/>
+          </svg>
+          <div>
+            <h3>Housing / Colocation</h3>
+            <p>Espacio en rack para sus propios equipos, con energía respaldada, conectividad redundante y acceso técnico cuando lo necesite.</p>
+            <ul class="servicio__datos">
+              <li>1U a rack completo</li><li>Acceso 24/7</li><li>IP dedicadas</li>
+            </ul>
+          </div>
+          <div class="servicio__accion">
+            <a class="enlace-texto" href="productos.html#housing-colocation">Ver detalle</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CIFRAS + DIFERENCIALES ============ -->
+  <section class="seccion seccion-oscura">
+    <div class="contenedor">
+      <div class="encabezado-seccion">
+        <p class="rotulo rotulo--claro">Por qué Proyectel</p>
+        <h2>Operamos nuestra propia red, no revendemos la de otros</h2>
+        <p>Eso cambia dos cosas concretas: quién responde cuando algo falla y en cuánto tiempo.</p>
+      </div>
+
+      <!-- CIFRAS: reemplazá por los datos reales de la empresa -->
+      <div class="cifras">
+        <div class="cifra">
+          <p class="cifra__valor">+15</p>
+          <p class="cifra__texto">años conectando empresas e instituciones en Bolivia</p>
+        </div>
+        <div class="cifra">
+          <p class="cifra__valor">99,9 %</p>
+          <p class="cifra__texto">de disponibilidad comprometida por contrato</p>
+        </div>
+        <div class="cifra">
+          <p class="cifra__valor">24/7</p>
+          <p class="cifra__texto">monitoreo y mesa de ayuda con personal propio</p>
+        </div>
+        <div class="cifra">
+          <p class="cifra__valor">N+1</p>
+          <p class="cifra__texto">redundancia en energía, refrigeración y salida internacional</p>
+        </div>
+      </div>
+
+      <div class="rejilla-3" style="margin-top: clamp(2.5rem, 5vw, 3.5rem);">
+        <div class="bloque-borde">
+          <h3>Un solo responsable</h3>
+          <p>Enlace, equipos y alojamiento bajo un mismo contrato y un mismo soporte. No hay derivaciones entre proveedores.</p>
+        </div>
+        <div class="bloque-borde">
+          <h3>Ingeniería antes que venta</h3>
+          <p>Relevamos su topología actual y dimensionamos la solución sobre datos de tráfico reales, no sobre un plan de catálogo.</p>
+        </div>
+        <div class="bloque-borde">
+          <h3>Respuesta local</h3>
+          <p>Técnicos en sitio y repuestos disponibles en el país, con tiempos de atención definidos en el acuerdo de servicio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LLAMADO FINAL ============ -->
+  <section class="seccion seccion-blanca">
+    <div class="contenedor llamado">
+      <h2>Cuéntenos qué necesita conectar y le preparamos una propuesta.</h2>
+      <a class="boton boton--primario" href="contacto.html#cotizacion">Solicitar cotización</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ PIE ============ -->
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__rejilla">
+      <div>
+        <a class="logo" href="index.html" style="margin-bottom:1rem">
+          <svg class="logo__marca" viewBox="0 0 32 32" aria-hidden="true">
+            <rect x="1" y="1" width="30" height="30" rx="4" fill="#FFFFFF" fill-opacity=".07" stroke="#26425C"/>
+            <circle cx="16" cy="16" r="3.2" fill="#C08A2E"/>
+            <circle cx="8" cy="9" r="2" fill="#FFFFFF"/><circle cx="24" cy="9" r="2" fill="#FFFFFF"/>
+            <circle cx="8" cy="23" r="2" fill="#FFFFFF"/><circle cx="24" cy="23" r="2" fill="#FFFFFF"/>
+            <g stroke="#7E98AC" stroke-width="1.1">
+              <path d="M9.6 10.4 13.6 13.6M22.4 10.4 18.4 13.6M9.6 21.6 13.6 18.4M22.4 21.6 18.4 18.4"/>
+            </g>
+          </svg>
+          <span class="logo__texto">PROYEC<span>TEL</span></span>
+        </a>
+        <p style="max-width:34ch">Conectividad e infraestructura corporativa. Santa Cruz de la Sierra, Bolivia.</p>
+      </div>
+      <div>
+        <h4>Soluciones</h4>
+        <ul>
+          <li><a href="productos.html#vpn-corporativa">VPN corporativa</a></li>
+          <li><a href="productos.html#data-center">Data center</a></li>
+          <li><a href="productos.html#enlace-de-datos">Enlace de datos</a></li>
+          <li><a href="productos.html#housing-colocation">Housing / Colocation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:comercial@proyectel.com.bo">comercial@proyectel.com.bo</a></li>
+          <li><a href="mailto:soporte@proyectel.com.bo">soporte@proyectel.com.bo</a></li>
+          <li><a href="tel:+59133000000">+591 3 300 0000</a></li>
+          <li><a href="contacto.html">Dirección y horarios</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pie__legal">
+      <p>&copy; <span id="anio">2026</span> Proyectel. Todos los derechos reservados.</p>
+      <p>Soporte técnico 24/7</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

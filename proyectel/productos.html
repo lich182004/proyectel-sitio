@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es-BO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Productos y soluciones — Proyectel</title>
+<meta name="description" content="VPN corporativa, data center, enlace de datos y housing/colocation. Especificaciones y solicitud de cotización por servicio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+<a class="salto-contenido" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor cabecera__fila">
+    <a class="logo" href="index.html">
+      <svg class="logo__marca" viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="1" y="1" width="30" height="30" rx="4" fill="#10263A"/>
+        <circle cx="16" cy="16" r="3.2" fill="#C08A2E"/>
+        <circle cx="8" cy="9" r="2" fill="#FFFFFF"/><circle cx="24" cy="9" r="2" fill="#FFFFFF"/>
+        <circle cx="8" cy="23" r="2" fill="#FFFFFF"/><circle cx="24" cy="23" r="2" fill="#FFFFFF"/>
+        <g stroke="#7E98AC" stroke-width="1.1">
+          <path d="M9.6 10.4 13.6 13.6M22.4 10.4 18.4 13.6M9.6 21.6 13.6 18.4M22.4 21.6 18.4 18.4"/>
+        </g>
+      </svg>
+      <span class="logo__texto">PROYEC<span>TEL</span></span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navPrincipal" aria-label="Abrir menú">
+      <span></span>
+    </button>
+
+    <nav class="nav" id="navPrincipal" aria-label="Navegación principal">
+      <ul class="nav__lista">
+        <li><a class="nav__enlace" href="index.html">Inicio</a></li>
+        <li><a class="nav__enlace" href="productos.html" aria-current="page">Productos y soluciones</a></li>
+        <li><a class="nav__enlace" href="nosotros.html">Nosotros</a></li>
+        <li><a class="nav__enlace" href="contacto.html">Contacto</a></li>
+      </ul>
+      <a class="boton boton--primario" href="contacto.html#cotizacion">Solicitar cotización</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- ============ ENCABEZADO DE PÁGINA ============ -->
+  <section class="portada">
+    <div class="contenedor portada__interior">
+      <p class="rotulo rotulo--claro">Productos y soluciones</p>
+      <h1 class="portada__titulo" style="max-width:20ch">Infraestructura que se arma a la medida de su operación.</h1>
+      <p class="portada__bajada">
+        Cada servicio funciona por separado o combinado. Elija el que necesita y solicite su cotización
+        directamente desde esta página: el formulario llega con el servicio ya seleccionado.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTOS ============ -->
+  <section class="seccion">
+    <div class="contenedor">
+
+      <!-- ---- VPN corporativa ---- -->
+      <article class="producto" id="vpn-corporativa">
+        <div class="producto__cabecera">
+          <svg width="36" height="36" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M20 4 6 10v10c0 8 6 14 14 16 8-2 14-8 14-16V10L20 4Z"/><path d="M14 20h12M20 14v12"/>
+          </svg>
+          <h2>VPN corporativa</h2>
+        </div>
+
+        <div class="producto__cuerpo">
+          <div class="producto__texto">
+            <p>
+              Una red privada que conecta su casa matriz, sus sucursales y a quienes trabajan fuera de la
+              oficina, como si todos estuvieran en la misma red local. El tráfico viaja cifrado de extremo a
+              extremo y usted define qué puede ver cada área.
+            </p>
+            <p>
+              La administramos nosotros: altas y bajas de usuarios, políticas de acceso, revisión de registros
+              y atención de incidentes. Su equipo de sistemas deja de mantener túneles y pasa a pedir cambios.
+            </p>
+            <h3 style="font-size:1rem;margin-top:1.75rem">Qué incluye</h3>
+            <ul class="lista-marcada">
+              <li>Túneles cifrados entre sedes y acceso remoto para usuarios móviles</li>
+              <li>Segmentación por área, perfil o dispositivo</li>
+              <li>Doble factor de autenticación para accesos externos</li>
+              <li>Registros de conexión y reportes mensuales de uso</li>
+              <li>Configuración inicial, pruebas y capacitación a su equipo</li>
+            </ul>
+          </div>
+
+          <!-- ESPECIFICACIONES: ajustá los valores a lo que realmente ofrece Proyectel -->
+          <aside class="ficha">
+            <h3>Ficha técnica</h3>
+            <dl>
+              <div class="ficha__fila"><dt>Cifrado</dt><dd>AES-256</dd></div>
+              <div class="ficha__fila"><dt>Protocolos</dt><dd>IPsec / IKEv2 / SSL</dd></div>
+              <div class="ficha__fila"><dt>Autenticación</dt><dd>Certificado + 2FA</dd></div>
+              <div class="ficha__fila"><dt>Sedes</dt><dd>Sin límite</dd></div>
+              <div class="ficha__fila"><dt>Administración</dt><dd>Gestionada</dd></div>
+              <div class="ficha__fila"><dt>Soporte</dt><dd>24/7</dd></div>
+            </dl>
+            <a class="boton boton--primario" href="contacto.html?producto=vpn-corporativa#cotizacion">Cotizar VPN corporativa</a>
+          </aside>
+        </div>
+      </article>
+
+      <!-- ---- Data center ---- -->
+      <article class="producto" id="data-center">
+        <div class="producto__cabecera">
+          <svg width="36" height="36" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="7" y="5" width="26" height="30" rx="2"/><path d="M7 15h26M7 25h26"/>
+            <circle cx="27" cy="10" r="1.4" fill="currentColor"/><circle cx="27" cy="20" r="1.4" fill="currentColor"/>
+            <circle cx="27" cy="30" r="1.4" fill="currentColor"/>
+          </svg>
+          <h2>Data center</h2>
+        </div>
+
+        <div class="producto__cuerpo">
+          <div class="producto__texto">
+            <p>
+              Sus sistemas dejan de depender del cuarto de servidores de la oficina. Los alojamos en
+              instalaciones con energía respaldada, refrigeración controlada y salida a internet redundante,
+              con monitoreo permanente.
+            </p>
+            <p>
+              Trabajamos con servidores dedicados o virtuales según la carga real de sus aplicaciones, y
+              agregamos respaldo automatizado para que una falla de hardware no signifique perder información.
+            </p>
+            <h3 style="font-size:1rem;margin-top:1.75rem">Qué incluye</h3>
+            <ul class="lista-marcada">
+              <li>Servidores dedicados o máquinas virtuales dimensionadas a su carga</li>
+              <li>Energía con UPS y grupo electrógeno</li>
+              <li>Refrigeración de precisión y detección temprana de incendios</li>
+              <li>Respaldo programado y plan de recuperación ante desastres</li>
+              <li>Monitoreo de disponibilidad y consumo de recursos</li>
+            </ul>
+          </div>
+
+          <aside class="ficha">
+            <h3>Ficha técnica</h3>
+            <dl>
+              <div class="ficha__fila"><dt>Energía</dt><dd>UPS + generador</dd></div>
+              <div class="ficha__fila"><dt>Refrigeración</dt><dd>N+1</dd></div>
+              <div class="ficha__fila"><dt>Conectividad</dt><dd>Multi-operador</dd></div>
+              <div class="ficha__fila"><dt>Seguridad</dt><dd>Acceso controlado + CCTV</dd></div>
+              <div class="ficha__fila"><dt>Respaldos</dt><dd>Diarios</dd></div>
+              <div class="ficha__fila"><dt>Disponibilidad</dt><dd>99,9 %</dd></div>
+            </dl>
+            <a class="boton boton--primario" href="contacto.html?producto=data-center#cotizacion">Cotizar data center</a>
+          </aside>
+        </div>
+      </article>
+
+      <!-- ---- Enlace de datos ---- -->
+      <article class="producto" id="enlace-de-datos">
+        <div class="producto__cabecera">
+          <svg width="36" height="36" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="9" cy="20" r="4"/><circle cx="31" cy="20" r="4"/>
+            <path d="M13 20h14M20 12v-4M20 28v4"/>
+          </svg>
+          <h2>Enlace de datos</h2>
+        </div>
+
+        <div class="producto__cuerpo">
+          <div class="producto__texto">
+            <p>
+              Un canal dedicado entre dos o más de sus oficinas. A diferencia de una conexión de internet
+              comercial, el ancho de banda no se comparte con otros clientes: lo que contrata es lo que tiene
+              disponible a cualquier hora del día.
+            </p>
+            <p>
+              Lo implementamos por fibra óptica donde hay tendido disponible y por radioenlace donde no lo hay,
+              con la opción de dejar un medio como respaldo automático del otro.
+            </p>
+            <h3 style="font-size:1rem;margin-top:1.75rem">Qué incluye</h3>
+            <ul class="lista-marcada">
+              <li>Ancho de banda simétrico y garantizado en relación 1:1</li>
+              <li>Topología punto a punto o punto a multipunto</li>
+              <li>Fibra óptica, radioenlace o esquema mixto con respaldo</li>
+              <li>Acuerdo de nivel de servicio con tiempos de respuesta definidos</li>
+              <li>Panel de consulta de tráfico y disponibilidad</li>
+            </ul>
+          </div>
+
+          <aside class="ficha">
+            <h3>Ficha técnica</h3>
+            <dl>
+              <div class="ficha__fila"><dt>Relación</dt><dd>1:1 simétrico</dd></div>
+              <div class="ficha__fila"><dt>Capacidad</dt><dd>2 Mbps – 1 Gbps</dd></div>
+              <div class="ficha__fila"><dt>Medios</dt><dd>Fibra / radioenlace</dd></div>
+              <div class="ficha__fila"><dt>Latencia</dt><dd>&lt; 10 ms metro</dd></div>
+              <div class="ficha__fila"><dt>Respaldo</dt><dd>Opcional automático</dd></div>
+              <div class="ficha__fila"><dt>SLA</dt><dd>Por contrato</dd></div>
+            </dl>
+            <a class="boton boton--primario" href="contacto.html?producto=enlace-de-datos#cotizacion">Cotizar enlace de datos</a>
+          </aside>
+        </div>
+      </article>
+
+      <!-- ---- Housing / Colocation ---- -->
+      <article class="producto" id="housing-colocation">
+        <div class="producto__cabecera">
+          <svg width="36" height="36" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="6" y="8" width="28" height="8" rx="1.5"/><rect x="6" y="18" width="28" height="8" rx="1.5"/>
+            <rect x="6" y="28" width="28" height="4" rx="1.5"/><path d="M11 12h2M11 22h2"/>
+          </svg>
+          <h2>Housing / Colocation</h2>
+        </div>
+
+        <div class="producto__cuerpo">
+          <div class="producto__texto">
+            <p>
+              Si prefiere conservar sus propios equipos, les damos un lugar preparado para que funcionen sin
+              interrupciones. Usted mantiene el control del hardware y del software; nosotros ponemos el
+              espacio, la energía, el clima y la conectividad.
+            </p>
+            <p>
+              Puede contratar desde una unidad de rack hasta un gabinete completo, con acceso presencial
+              coordinado o manos remotas cuando no pueda llegar al sitio.
+            </p>
+            <h3 style="font-size:1rem;margin-top:1.75rem">Qué incluye</h3>
+            <ul class="lista-marcada">
+              <li>Espacio desde 1U hasta rack completo, con gabinete cerrado</li>
+              <li>Energía respaldada y consumo incluido según potencia contratada</li>
+              <li>Direcciones IP públicas y ancho de banda a medida</li>
+              <li>Acceso físico coordinado las 24 horas y servicio de manos remotas</li>
+              <li>Vigilancia permanente y registro de ingresos</li>
+            </ul>
+          </div>
+
+          <aside class="ficha">
+            <h3>Ficha técnica</h3>
+            <dl>
+              <div class="ficha__fila"><dt>Espacio</dt><dd>1U – 42U</dd></div>
+              <div class="ficha__fila"><dt>Energía</dt><dd>Respaldada + UPS</dd></div>
+              <div class="ficha__fila"><dt>Conectividad</dt><dd>Redundante</dd></div>
+              <div class="ficha__fila"><dt>Acceso</dt><dd>24/7 coordinado</dd></div>
+              <div class="ficha__fila"><dt>Manos remotas</dt><dd>Incluidas</dd></div>
+              <div class="ficha__fila"><dt>Equipos</dt><dd>Rackeables</dd></div>
+            </dl>
+            <a class="boton boton--primario" href="contacto.html?producto=housing-colocation#cotizacion">Cotizar housing / colocation</a>
+          </aside>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ LLAMADO ============ -->
+  <section class="seccion seccion-oscura">
+    <div class="contenedor llamado">
+      <h2>¿No sabe cuál de los cuatro necesita? Lo revisamos juntos.</h2>
+      <a class="boton boton--claro" href="contacto.html#cotizacion">Hablar con un ingeniero</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__rejilla">
+      <div>
+        <a class="logo" href="index.html" style="margin-bottom:1rem">
+          <svg class="logo__marca" viewBox="0 0 32 32" aria-hidden="true">
+            <rect x="1" y="1" width="30" height="30" rx="4" fill="#FFFFFF" fill-opacity=".07" stroke="#26425C"/>
+            <circle cx="16" cy="16" r="3.2" fill="#C08A2E"/>
+            <circle cx="8" cy="9" r="2" fill="#FFFFFF"/><circle cx="24" cy="9" r="2" fill="#FFFFFF"/>
+            <circle cx="8" cy="23" r="2" fill="#FFFFFF"/><circle cx="24" cy="23" r="2" fill="#FFFFFF"/>
+            <g stroke="#7E98AC" stroke-width="1.1">
+              <path d="M9.6 10.4 13.6 13.6M22.4 10.4 18.4 13.6M9.6 21.6 13.6 18.4M22.4 21.6 18.4 18.4"/>
+            </g>
+          </svg>
+          <span class="logo__texto">PROYEC<span>TEL</span></span>
+        </a>
+        <p style="max-width:34ch">Conectividad e infraestructura corporativa. Santa Cruz de la Sierra, Bolivia.</p>
+      </div>
+      <div>
+        <h4>Soluciones</h4>
+        <ul>
+          <li><a href="productos.html#vpn-corporativa">VPN corporativa</a></li>
+          <li><a href="productos.html#data-center">Data center</a></li>
+          <li><a href="productos.html#enlace-de-datos">Enlace de datos</a></li>
+          <li><a href="productos.html#housing-colocation">Housing / Colocation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:comercial@proyectel.com.bo">comercial@proyectel.com.bo</a></li>
+          <li><a href="mailto:soporte@proyectel.com.bo">soporte@proyectel.com.bo</a></li>
+          <li><a href="tel:+59133000000">+591 3 300 0000</a></li>
+          <li><a href="contacto.html">Dirección y horarios</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pie__legal">
+      <p>&copy; <span id="anio">2026</span> Proyectel. Todos los derechos reservados.</p>
+      <p>Soporte técnico 24/7</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
